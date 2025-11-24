@@ -67,6 +67,7 @@ a {
   transition: all 0.2s ease;
   border: none;
   font-size: 0.95rem;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn-primary {
@@ -149,6 +150,8 @@ a {
   flex: 1;
   padding: 2rem;
   overflow-y: auto;
+  margin-left: var(--sidebar-width);
+  transition: margin-left 0.3s ease;
 }
 
 @keyframes spin {
@@ -175,4 +178,77 @@ a {
 
 .fade-in {
   animation: fadeIn 0.4s ease;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .auth-card {
+    padding: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.5rem !important;
+  }
+
+  h2 {
+    font-size: 1.25rem !important;
+  }
+
+  h3 {
+    font-size: 1.1rem !important;
+  }
+
+  /* Make cards stack on mobile */
+  [style*="gridTemplateColumns"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Adjust padding for mobile */
+  [style*="padding: 2rem"] {
+    padding: 1.25rem !important;
+  }
+
+  [style*="padding: 2.5rem"] {
+    padding: 1.5rem !important;
+  }
+
+  [style*="padding: 3rem"] {
+    padding: 1.75rem !important;
+  }
+
+  /* Better touch targets */
+  button,
+  a,
+  input,
+  textarea {
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 0.75rem;
+  }
+
+  .auth-card {
+    padding: 1.25rem;
+  }
+
+  h1 {
+    font-size: 1.35rem !important;
+  }
+
+  h2 {
+    font-size: 1.15rem !important;
+  }
 }
