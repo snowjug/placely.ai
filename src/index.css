@@ -35,6 +35,12 @@
   padding: 0;
 }
 
+html {
+  /* Prevent horizontal scroll on mobile */
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
   background-color: var(--background);
@@ -42,6 +48,9 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 a {
@@ -144,14 +153,19 @@ a {
 .dashboard-layout {
   display: flex;
   min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .main-content {
   flex: 1;
   padding: 2rem;
   overflow-y: auto;
+  overflow-x: hidden;
   margin-left: var(--sidebar-width);
   transition: margin-left 0.3s ease;
+  width: 100%;
+  max-width: 100%;
 }
 
 @keyframes spin {
@@ -185,6 +199,8 @@ a {
   .main-content {
     margin-left: 0;
     padding: 1rem;
+    padding-top: 76px;
+    /* Account for mobile header */
   }
 
   .auth-card {
@@ -208,36 +224,33 @@ a {
     font-size: 1.1rem !important;
   }
 
-  /* Make cards stack on mobile */
-  [style*="gridTemplateColumns"] {
-    grid-template-columns: 1fr !important;
-  }
-
-  /* Adjust padding for mobile */
-  [style*="padding: 2rem"] {
-    padding: 1.25rem !important;
-  }
-
-  [style*="padding: 2.5rem"] {
-    padding: 1.5rem !important;
-  }
-
-  [style*="padding: 3rem"] {
-    padding: 1.75rem !important;
-  }
-
   /* Better touch targets */
   button,
   a,
   input,
-  textarea {
+  textarea,
+  select {
     min-height: 44px;
+  }
+
+  /* Prevent text from being too small */
+  body {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Fix input zoom on iOS */
+  input,
+  textarea,
+  select {
+    font-size: 16px;
   }
 }
 
 @media (max-width: 480px) {
   .main-content {
     padding: 0.75rem;
+    padding-top: 76px;
   }
 
   .auth-card {
@@ -250,5 +263,10 @@ a {
 
   h2 {
     font-size: 1.15rem !important;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
   }
 }
