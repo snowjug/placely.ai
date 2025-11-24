@@ -18,7 +18,7 @@ export default function Signup() {
             <div className="auth-card">
                 <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
                     <h1 style={{ fontSize: '1.8rem', fontWeight: 'bold', marginBottom: '0.5rem' }}>Create an Account</h1>
-                    <p style={{ color: '#6b7280' }}>Start your journey with placely.ai</p>
+                    <p style={{ color: 'var(--text-secondary)' }}>Start your journey with placely.ai</p>
                 </div>
 
                 <form onSubmit={handleSubmit}>
@@ -64,7 +64,7 @@ export default function Signup() {
                 </form>
 
                 <div style={{ marginTop: '1.5rem', textAlign: 'center', fontSize: '0.9rem' }}>
-                    <span style={{ color: '#6b7280' }}>Already have an account? </span>
+                    <span style={{ color: 'var(--text-secondary)' }}>Already have an account? </span>
                     <Link to="/login" style={{ color: 'var(--primary-color)', fontWeight: '500' }}>
                         Sign in
                     </Link>

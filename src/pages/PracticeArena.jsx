@@ -94,7 +94,7 @@ export default function PracticeArena() {
         return (
             <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center', paddingTop: '4rem' }} className="fade-in">
                 <div style={{
-                    backgroundColor: 'white',
+                    backgroundColor: 'var(--surface)',
                     padding: '3rem',
                     borderRadius: '1.5rem',
                     boxShadow: '0 4px 20px rgba(0,0,0,0.08)'
@@ -138,7 +138,7 @@ export default function PracticeArena() {
 
             {/* Code Playground */}
             <div style={{
-                backgroundColor: 'white',
+                backgroundColor: 'var(--surface)',
                 padding: '2rem',
                 borderRadius: '1.25rem',
                 boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
@@ -167,7 +167,7 @@ export default function PracticeArena() {
 
             {/* Coding Questions */}
             <div style={{
-                backgroundColor: 'white',
+                backgroundColor: 'var(--surface)',
                 padding: '2rem',
                 borderRadius: '1.25rem',
                 boxShadow: '0 2px 12px rgba(0,0,0,0.06)'
@@ -194,11 +194,11 @@ export default function PracticeArena() {
                                 textDecoration: 'none',
                                 color: 'inherit',
                                 transition: 'all 0.2s',
-                                backgroundColor: 'white'
+                                backgroundColor: 'var(--surface)'
                             }}
                             onMouseEnter={(e) => {
                                 e.currentTarget.style.borderColor = 'var(--primary-color)';
-                                e.currentTarget.style.backgroundColor = '#fafafa';
+                                e.currentTarget.style.backgroundColor = 'var(--background)';
                                 e.currentTarget.style.transform = 'translateX(4px)';
                             }}
                             onMouseLeave={(e) => {
@@ -215,9 +215,9 @@ export default function PracticeArena() {
                                 <div style={{ display: 'flex', gap: '1rem', fontSize: '0.85rem' }}>
                                     <span style={{
                                         padding: '0.25rem 0.75rem',
-                                        backgroundColor: '#F3F4F6',
+                                        backgroundColor: 'var(--background)',
                                         borderRadius: '0.375rem',
-                                        color: '#4B5563',
+                                        color: 'var(--text-color)',
                                         fontWeight: '500'
                                     }}>
                                         {question.category}

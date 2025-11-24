@@ -238,7 +238,7 @@ Continue for all ${duration} weeks.`;
 
       <div style={{ display: 'grid', gap: '2rem' }}>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
-          <div style={{ backgroundColor: 'white', padding: '1.75rem', borderRadius: '1.25rem', boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
+          <div style={{ backgroundColor: 'var(--surface)', padding: '1.75rem', borderRadius: '1.25rem', boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
             <h2 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '0.5rem' }}>Your Target</h2>
             <p style={{ color: 'var(--text-secondary)', marginBottom: '1.25rem', fontSize: '0.9rem' }}>Set your goal to personalize your dashboard.</p>
 
@@ -260,7 +260,7 @@ Continue for all ${duration} weeks.`;
                     top: '100%',
                     left: 0,
                     right: 0,
-                    backgroundColor: 'white',
+                    backgroundColor: 'var(--surface)',
                     border: '1px solid var(--border-color)',
                     borderRadius: '0.75rem',
                     marginTop: '0.5rem',
@@ -309,7 +309,7 @@ Continue for all ${duration} weeks.`;
                     top: '100%',
                     left: 0,
                     right: 0,
-                    backgroundColor: 'white',
+                    backgroundColor: 'var(--surface)',
                     border: '1px solid var(--border-color)',
                     borderRadius: '0.75rem',
                     marginTop: '0.5rem',
@@ -357,7 +357,7 @@ Continue for all ${duration} weeks.`;
             </button>
           </div>
 
-          <div style={{ backgroundColor: 'white', padding: '1.75rem', borderRadius: '1.25rem', boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
+          <div style={{ backgroundColor: 'var(--surface)', padding: '1.75rem', borderRadius: '1.25rem', boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
             <h2 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '0.5rem' }}>Generate Prep Plan</h2>
             <p style={{ color: 'var(--text-secondary)', marginBottom: '1.25rem', fontSize: '0.9rem' }}>Create a weekly study guide based on your key topics.</p>
 
@@ -391,7 +391,7 @@ Continue for all ${duration} weeks.`;
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
-          <div style={{ backgroundColor: 'white', padding: '2rem', borderRadius: '1.25rem', boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
+          <div style={{ backgroundColor: 'var(--surface)', padding: '2rem', borderRadius: '1.25rem', boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
             <h2 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '1.25rem' }}>Key Topics to Cover</h2>
             {loadingTopics ? (
               <div style={{ textAlign: 'center', padding: '2rem 0', color: 'var(--text-secondary)' }}>
@@ -412,7 +412,7 @@ Continue for all ${duration} weeks.`;
             )}
           </div>
 
-          <div style={{ backgroundColor: 'white', padding: '2rem', borderRadius: '1.25rem', boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
+          <div style={{ backgroundColor: 'var(--surface)', padding: '2rem', borderRadius: '1.25rem', boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
             <h2 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '1.25rem' }}>Company Snapshot</h2>
             {loadingTopics ? (
               <div style={{ textAlign: 'center', padding: '2rem 0', color: 'var(--text-secondary)' }}>
@@ -440,7 +440,7 @@ Continue for all ${duration} weeks.`;
           </div>
         </div>
 
-        <div style={{ backgroundColor: 'white', padding: '2rem', borderRadius: '1.25rem', boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
+        <div style={{ backgroundColor: 'var(--surface)', padding: '2rem', borderRadius: '1.25rem', boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
           <h2 style={{ fontSize: '1.5rem', fontWeight: '600', marginBottom: '1rem' }}>Your AI Preparation Plan</h2>
           <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>A weekly breakdown of topics and tasks to get you ready.</p>
 
@@ -454,7 +454,7 @@ Continue for all ${duration} weeks.`;
               {preparationPlan.map((weekData) => (
                 <div key={weekData.week} style={{
                   padding: '1.5rem',
-                  backgroundColor: '#fafafa',
+                  backgroundColor: 'var(--background)',
                   borderRadius: '1rem',
                   border: '1px solid #f0f0f0'
                 }}>
@@ -468,13 +468,13 @@ Continue for all ${duration} weeks.`;
               ))}
             </div>
           ) : (
-            <div style={{ textAlign: 'center', padding: '3rem 0', color: 'var(--text-secondary)', backgroundColor: '#fafafa', borderRadius: '1rem' }}>
+            <div style={{ textAlign: 'center', padding: '3rem 0', color: 'var(--text-secondary)', backgroundColor: 'var(--background)', borderRadius: '1rem' }}>
               <p style={{ fontSize: '1rem' }}>Your generated plan will appear here once you click "Generate Plan".</p>
             </div>
           )}
         </div>
 
-        <div style={{ backgroundColor: 'white', borderRadius: '1.25rem', boxShadow: '0 2px 12px rgba(0,0,0,0.06)', overflow: 'hidden' }}>
+        <div style={{ backgroundColor: 'var(--surface)', borderRadius: '1.25rem', boxShadow: '0 2px 12px rgba(0,0,0,0.06)', overflow: 'hidden' }}>
           <button
             onClick={() => setFaqExpanded(!faqExpanded)}
             style={{
@@ -483,13 +483,13 @@ Continue for all ${duration} weeks.`;
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
-              backgroundColor: 'white',
+              backgroundColor: 'var(--surface)',
               border: 'none',
               cursor: 'pointer',
               textAlign: 'left',
               transition: 'background-color 0.15s'
             }}
-            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#fafafa'}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--background)'}
             onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'white'}
           >
             <div>
@@ -516,7 +516,7 @@ Continue for all ${duration} weeks.`;
                         display: 'flex',
                         justifyContent: 'space-between',
                         alignItems: 'center',
-                        backgroundColor: openFaqIndex === idx ? '#fafafa' : 'white',
+                        backgroundColor: openFaqIndex === idx ? 'var(--background)' : 'white',
                         border: 'none',
                         cursor: 'pointer',
                         textAlign: 'left',
@@ -530,7 +530,7 @@ Continue for all ${duration} weeks.`;
                       <div className="fade-in" style={{
                         padding: '1rem 1.25rem',
                         borderTop: '1px solid var(--border-color)',
-                        backgroundColor: '#fafafa',
+                        backgroundColor: 'var(--background)',
                         color: 'var(--text-secondary)',
                         lineHeight: '1.6',
                         fontSize: '0.9rem'
@@ -542,7 +542,7 @@ Continue for all ${duration} weeks.`;
                 ))}
               </div>
 
-              <div style={{ textAlign: 'center', padding: '1.5rem', backgroundColor: '#fafafa', borderRadius: '0.75rem' }}>
+              <div style={{ textAlign: 'center', padding: '1.5rem', backgroundColor: 'var(--background)', borderRadius: '0.75rem' }}>
                 <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem' }}>Can't find the answer you're looking for?</p>
                 <button className="btn btn-primary">Contact Support</button>
               </div>

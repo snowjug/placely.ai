@@ -26,7 +26,7 @@ export default function Login() {
             <div className="auth-card">
                 <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
                     <h1 style={{ fontSize: '1.8rem', fontWeight: 'bold', marginBottom: '0.5rem' }}>Welcome Back</h1>
-                    <p style={{ color: '#6b7280' }}>Sign in to continue your preparation</p>
+                    <p style={{ color: 'var(--text-secondary)' }}>Sign in to continue your preparation</p>
                 </div>
 
                 <form onSubmit={handleSubmit}>
@@ -64,7 +64,7 @@ export default function Login() {
                 </form>
 
                 <div style={{ marginTop: '1.5rem', textAlign: 'center', fontSize: '0.9rem' }}>
-                    <span style={{ color: '#6b7280' }}>Don't have an account? </span>
+                    <span style={{ color: 'var(--text-secondary)' }}>Don't have an account? </span>
                     <Link to="/signup" style={{ color: 'var(--primary-color)', fontWeight: '500' }}>
                         Sign up
                     </Link>

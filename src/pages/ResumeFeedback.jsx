@@ -120,7 +120,7 @@ Note: Since I cannot actually read the PDF file, provide general feedback based 
             <h1 style={{ fontSize: '2rem', fontWeight: '600', marginBottom: '0.5rem' }}>Resume Feedback</h1>
 
             <div style={{
-                backgroundColor: 'white',
+                backgroundColor: 'var(--surface)',
                 padding: '2rem',
                 borderRadius: '1.25rem',
                 boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
@@ -164,7 +164,7 @@ Note: Since I cannot actually read the PDF file, provide general feedback based 
                             borderRadius: '0.75rem',
                             padding: '2.5rem',
                             textAlign: 'center',
-                            backgroundColor: dragActive ? '#EFF6FF' : '#fafafa',
+                            backgroundColor: dragActive ? '#EFF6FF' : 'var(--background)',
                             cursor: 'pointer',
                             transition: 'all 0.2s'
                         }}
@@ -250,7 +250,7 @@ Note: Since I cannot actually read the PDF file, provide general feedback based 
             {/* Feedback Results */}
             {feedback && (
                 <div className="fade-in" style={{
-                    backgroundColor: 'white',
+                    backgroundColor: 'var(--surface)',
                     padding: '2rem',
                     borderRadius: '1.25rem',
                     boxShadow: '0 2px 12px rgba(0,0,0,0.06)'
@@ -278,7 +278,7 @@ Note: Since I cannot actually read the PDF file, provide general feedback based 
                         </h3>
                         <ul style={{ paddingLeft: '1.5rem', lineHeight: '2' }}>
                             {feedback.strengths.map((strength, idx) => (
-                                <li key={idx} style={{ color: '#374151' }}>{strength}</li>
+                                <li key={idx} style={{ color: 'var(--text-color)' }}>{strength}</li>
                             ))}
                         </ul>
                     </div>
@@ -290,7 +290,7 @@ Note: Since I cannot actually read the PDF file, provide general feedback based 
                         </h3>
                         <ul style={{ paddingLeft: '1.5rem', lineHeight: '2' }}>
                             {feedback.improvements.map((improvement, idx) => (
-                                <li key={idx} style={{ color: '#374151' }}>{improvement}</li>
+                                <li key={idx} style={{ color: 'var(--text-color)' }}>{improvement}</li>
                             ))}
                         </ul>
                     </div>
@@ -323,7 +323,7 @@ Note: Since I cannot actually read the PDF file, provide general feedback based 
                         </h3>
                         <ul style={{ paddingLeft: '1.5rem', lineHeight: '2' }}>
                             {feedback.recommendations.map((rec, idx) => (
-                                <li key={idx} style={{ color: '#374151' }}>{rec}</li>
+                                <li key={idx} style={{ color: 'var(--text-color)' }}>{rec}</li>
                             ))}
                         </ul>
                     </div>

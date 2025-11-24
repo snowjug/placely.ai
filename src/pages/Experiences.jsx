@@ -108,7 +108,7 @@ Continue for all 6 questions. Make the questions specific to the role and compan
                     <div style={{ display: 'grid', gap: '0.75rem' }}>
                         {interviewQuestions.map((item, idx) => (
                             <div key={idx} style={{
-                                backgroundColor: 'white',
+                                backgroundColor: 'var(--surface)',
                                 border: '1px solid var(--border-color)',
                                 borderRadius: '0.75rem',
                                 overflow: 'hidden',
@@ -122,7 +122,7 @@ Continue for all 6 questions. Make the questions specific to the role and compan
                                         display: 'flex',
                                         justifyContent: 'space-between',
                                         alignItems: 'center',
-                                        backgroundColor: openIndex === idx ? '#fafafa' : 'white',
+                                        backgroundColor: openIndex === idx ? 'var(--background)' : 'white',
                                         border: 'none',
                                         cursor: 'pointer',
                                         textAlign: 'left',
@@ -136,7 +136,7 @@ Continue for all 6 questions. Make the questions specific to the role and compan
                                     <div className="fade-in" style={{
                                         padding: '1.25rem',
                                         borderTop: '1px solid var(--border-color)',
-                                        backgroundColor: '#fafafa'
+                                        backgroundColor: 'var(--background)'
                                     }}>
                                         <div style={{
                                             backgroundColor: '#E3F2FD',
@@ -163,7 +163,7 @@ Continue for all 6 questions. Make the questions specific to the role and compan
                     <div style={{
                         marginTop: '2rem',
                         padding: '1.5rem',
-                        backgroundColor: 'white',
+                        backgroundColor: 'var(--surface)',
                         borderRadius: '1rem',
                         border: '1px solid var(--border-color)',
                         textAlign: 'center'

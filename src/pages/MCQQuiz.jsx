@@ -148,7 +148,7 @@ Continue for all 5 questions.`;
         return (
             <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center', paddingTop: '4rem' }} className="fade-in">
                 <div style={{
-                    backgroundColor: 'white',
+                    backgroundColor: 'var(--surface)',
                     padding: '3rem',
                     borderRadius: '1.5rem',
                     boxShadow: '0 4px 20px rgba(0,0,0,0.08)'
@@ -175,7 +175,7 @@ Continue for all 5 questions.`;
         return (
             <div style={{ maxWidth: '800px', margin: '0 auto' }} className="fade-in">
                 <div style={{
-                    backgroundColor: 'white',
+                    backgroundColor: 'var(--surface)',
                     padding: '3rem',
                     borderRadius: '1.5rem',
                     boxShadow: '0 4px 20px rgba(0,0,0,0.08)',
@@ -209,7 +209,7 @@ Continue for all 5 questions.`;
         return (
             <div style={{ maxWidth: '800px', margin: '0 auto' }} className="fade-in">
                 <div style={{
-                    backgroundColor: 'white',
+                    backgroundColor: 'var(--surface)',
                     padding: '2.5rem',
                     borderRadius: '1.5rem',
                     boxShadow: '0 4px 20px rgba(0,0,0,0.08)'
@@ -244,7 +244,7 @@ Continue for all 5 questions.`;
                                 }}
                                 onMouseEnter={(e) => {
                                     if (selectedAnswer !== option.id) {
-                                        e.currentTarget.style.backgroundColor = '#f9fafb';
+                                        e.currentTarget.style.backgroundColor = 'var(--background)';
                                     }
                                 }}
                                 onMouseLeave={(e) => {
@@ -295,7 +295,7 @@ Continue for all 5 questions.`;
                             key={idx}
                             onClick={() => startQuiz(topic)}
                             style={{
-                                backgroundColor: 'white',
+                                backgroundColor: 'var(--surface)',
                                 padding: '2rem',
                                 borderRadius: '1.25rem',
                                 boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
